@@ -172,14 +172,18 @@ section{
 
 .reading{
     padding: 40px 102px;
-    
     color: white;
+}
+
+.reading p{
+    max-width: 600px;
+    width: auto;
 }
 
 .reading h2{
     font-size: 20px;
     letter-spacing: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-family: 'Montserrat', sans-serif;
 }
 
