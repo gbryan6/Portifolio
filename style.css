@@ -24,12 +24,6 @@ html,body{
   -webkit-font-smoothing: antialiased;
 }
 
-section{
-   height: 90%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-}
 
 #landing{
     width: auto;
@@ -40,25 +34,20 @@ section{
     justify-content: center;
 }
 
-#logo{
-    width: 60px ;
-}
-
-#content{
+#landing__content{
     width: 80% ;
     height: 80%;
     
 }
 
-.top-bar{
+.landing__nav-bar{
     display: flex;
     width: auto;
     justify-content: space-between;
     color: white;
 }
 
-
-.items{
+.landing__nav-bar--left{
     display: flex;
     list-style: none;
     width: 637px;
@@ -68,7 +57,7 @@ section{
     font-size: 14px;
 }
 
-.items li{
+.landing__nav-bar--left li{
     width: 147px;
     height: 46px;
     display: flex;
@@ -76,14 +65,7 @@ section{
     justify-content: center;
 }
 
-#tell-me{
-    background-color:white;
-    border-radius: 10px;
-    
-}
-
-
-.items a{
+.landing__nav-bar--left a{
     text-decoration: none;
     color: black;
     align-self: center;
@@ -91,25 +73,42 @@ section{
     padding: 10px;
 }
 
-#about a{
-    color: black;
+#landing__nav-bar--active{
+    background-color:white;
+    border-radius: 10px;
+    
 }
 
+#landing__logo{
+    width: 60px ;
+}
 
+.landing__section{
+   height: 90%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
 
-.apresentation{
-
+.landing__apresentation{
+    
     font-family: 'Raleway', sans-serif;
 
 }
 
-.apresentation h3{
+.landing__apresentation h3{
     
     font-weight: bold;
     font-size: 35px;
+    
 }
 
-.apresentation h1{
+.landing__apresentation h3:hover{
+    transform: translateY(-8px);
+    transition: all 0.5s ease-in-out;
+}
+
+.landing__apresentation h1{
     
     font-size: 65px;
     font-weight: bold;
@@ -117,27 +116,30 @@ section{
     margin-bottom: 15px;
 }
 
-.apresentation p{
+.landing__apresentation h1:hover{
+    transform: translateY(-8px);
+    transition: all 0.5s ease-in-out;
+}
+
+.landing__apresentation p{
     color: #909090;
     font-weight: 800;
     font-size: 18px;
     margin-bottom: 100px;
 }
 
-
-
-.buttons ul{
+.landing__buttons--left{
     list-style: none;
     display: flex;
     justify-content: flex-end;
     padding-right: 200px;
 }
 
-.buttons a{
+.landing__buttons a{
     height: 36px;
 }
 
-.buttons li{
+.landing__buttons li{
     width: 52px;
     height: 47px;
     display: flex;
@@ -151,19 +153,19 @@ section{
     transition: all 0.9s;
 }
 
-.buttons li img{
+.landing__buttons li img{
     width: 34px;
     height: 34px;
 }
 
-.buttons li:hover{
+.landing__buttons li:hover{
     position: relative;
     top: 4px;
     box-shadow: none;
 }
 
 
-.my-history{
+.curiosity{
     height: 250px;
     display: flex;
     justify-content: space-between;
@@ -171,44 +173,44 @@ section{
     overflow: hidden;
 }
 
-.reading{
+.curiosity__reading{
     padding: 40px 102px;
     color: white;
 }
 
-.reading p{
+.curiosity__reading p{
     max-width: 600px;
     width: auto;
     text-align: justify;
 }
 
-.reading h2{
+.curiosity__reading h2{
     font-size: 20px;
     letter-spacing: 5px;
     margin-bottom: 50px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.reading p{
+.curiosity__reading p{
     font-size: 12px;
     font-family: 'Open-sans', sans-serif;
     font-weight: 700;
 }
 
-.animation{
+.curiosity__animation{
     margin-right: 65px;
     position: relative;
     top: -45px;
 }
 
-.about-me{
+.about-me__content{
     height: 3000px;
     display: flex;
     flex-direction: column;
     
 }
 
-.marcation{
+.about-me__marcation{
    display: flex;
    align-items: center;
     justify-content: center;
@@ -216,7 +218,7 @@ section{
     margin-bottom: 80px;
 }
 
-.marcation h2{
+.about-me__marcation h2{
     border: 8px solid black;
     border-radius: 20px;
     padding: 25px 45px;
@@ -224,7 +226,7 @@ section{
     letter-spacing: 10px;
 }
 
-.coment{
+.about-me__coment{
     font-family: 'Open-sans', sans-serif;
     font-weight: 500;
     display: flex;
@@ -234,15 +236,24 @@ section{
    
 }
 
-.coment p{
+.about-me__coment--decoration{
     margin-bottom: 80px;
     border-left: 2px solid black;
     border-right: 2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.skills{
+.about-me__meet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 180px;
+
+}
+
+.about-me__knowledge{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -250,21 +261,13 @@ section{
     max-width: 1000px;
 }
 
-.section-skills{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-    margin-bottom: 180px;
-    padding-left: 90px;
-}
 
-.skill{
+.about-me__knowledge--center{
     margin-top: 80px;
-    margin-right: 100px;
+    
 }
 
-.skill h2{
+.about-me__knowledge--center h2{
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -272,7 +275,7 @@ section{
     font-size: 20px;
 }
 
-.skill p{
+.about-me__knowledge--center p{
     font-family: 'Open-sans', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -280,19 +283,13 @@ section{
     max-width: 380px;
 }
 
-.skill img{
+.about-me__knowledge--center img{
     position: relative;
     bottom: -45px;
     right: 50px;
 }
 
-.skill #down{
-    align-self: center;
-}
 
-.about-me > img{
-    margin-bottom: 0px;
-}
 
 .marcation-two h2{
     width: 344px;
