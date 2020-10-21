@@ -148,6 +148,7 @@ section{
     margin-left: 20px;
     border-radius: 10px;
     size: 1rem;
+    transition: all 0.9s;
 }
 
 .buttons li img{
@@ -178,6 +179,7 @@ section{
 .reading p{
     max-width: 600px;
     width: auto;
+    text-align: justify;
 }
 
 .reading h2{
@@ -211,7 +213,7 @@ section{
    align-items: center;
     justify-content: center;
     margin-top: 142px;
-    margin-bottom: 41px;
+    margin-bottom: 80px;
 }
 
 .marcation h2{
@@ -222,10 +224,83 @@ section{
     letter-spacing: 10px;
 }
 
-.about-me p{
+.coment{
     font-family: 'Open-sans', sans-serif;
     font-weight: 500;
-    align-self: center;
-    margin-bottom: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
 
+.coment p{
+    margin-bottom: 80px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.section-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 180px;
+    padding-left: 90px;
+}
+
+.skill{
+    margin-top: 80px;
+    margin-right: 100px;
+}
+
+.skill h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.18538em;
+    font-size: 20px;
+}
+
+.skill p{
+    font-family: 'Open-sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: justify;
+    max-width: 380px;
+}
+
+.skill img{
+    position: relative;
+    bottom: -45px;
+    right: 50px;
+}
+
+.skill #down{
+    align-self: center;
+}
+
+.about-me > img{
+    margin-bottom: 0px;
+}
+
+.marcation-two h2{
+    width: 344px;
+    height: 95px;
+    text-align: center;
+}
+
+.marcation-two{
+    display: flex;
+    justify-content: center;
 }
