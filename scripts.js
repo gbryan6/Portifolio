@@ -1,5 +1,9 @@
 const sectionSkills = document.querySelector('.about-me__skills--section');
 const skill = document.querySelector('.about-me__skill');
+
+
+const sectionSkillsLearning = document.querySelector('.about-me__skills--section .learning');
+
 const curiosity = document.querySelector('.curiosity__reading-trade');
 
 const skills = [
@@ -33,19 +37,35 @@ const skills = [
         name: 'CSS',
         alt: 'CSS logo'      
     },
+     
+];
+
+const skillsLearning =  [
     {
-        id:"6",
-        image: "./iconSkills/React.svg",
-        name: 'REACT',
-        alt: 'REACT logo'      
+        id:"1",
+        image: "./iconSkills/Ts.svg",
+        name: 'TYPESCRIPT',
+        alt: 'TypeScript logo'      
     },
     {
-        id:"7",
+        id:"2",
+        image: "./iconSkills/Ts.svg",
+        name: 'TYPESCRIPT',
+        alt: 'TypeScript logo' 
+    },
+    {
+        id:"3",
+        image: "./iconSkills/Ts.svg",
+        name: 'TYPESCRIPT',
+        alt: 'TypeScript logo'
+    },
+    {
+        id:"4",
         image: "./iconSkills/Sql.svg",
         name: 'SQL',
         alt: 'SQL logo'      
-    }, 
-];
+    },
+]
 
 const curiosities = [
     {
@@ -73,6 +93,8 @@ skills.map( tec => {
 
 
 
+
+
 let position = 0;
 
 setInterval(() => {
@@ -81,7 +103,7 @@ setInterval(() => {
     if(position > 2 ){
         position = 0;
     }
-}, 6000);
+}, 8000);
 
 
 
