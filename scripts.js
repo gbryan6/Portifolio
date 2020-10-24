@@ -1,8 +1,10 @@
 const sectionSkills = document.querySelector('.about-me__skills--section');
 const skill = document.querySelector('.about-me__skill');
 
+const learningSkill = document.querySelector('#skill__learning');
+const learningSection = document.querySelector('#section__learning');
 
-const sectionSkillsLearning = document.querySelector('.about-me__skills--section .learning');
+const menuItems = document.querySelectorAll('.landing__nav-bar a');
 
 const curiosity = document.querySelector('.curiosity__reading-trade');
 
@@ -49,21 +51,21 @@ const skillsLearning =  [
     },
     {
         id:"2",
-        image: "./iconSkills/Ts.svg",
-        name: 'TYPESCRIPT',
-        alt: 'TypeScript logo' 
+        image: "./iconSkills/React.svg",
+        name: 'REACT',
+        alt: 'REACT logo' 
     },
     {
         id:"3",
-        image: "./iconSkills/Ts.svg",
-        name: 'TYPESCRIPT',
-        alt: 'TypeScript logo'
+        image: "./iconSkills/Sql.svg",
+        name: 'MySQL',
+        alt: 'MySQL logo'
     },
     {
         id:"4",
-        image: "./iconSkills/Sql.svg",
-        name: 'SQL',
-        alt: 'SQL logo'      
+        image: "./iconSkills/English.svg",
+        name: 'ENGLISH',
+        alt: 'USA logo'      
     },
 ]
 
@@ -82,6 +84,17 @@ const curiosities = [
     }
 ]
 
+let position = 0;
+
+skillsLearning.map( tecno => {
+    const skillCloneL = learningSkill.cloneNode(true);
+    skillCloneL.setAttribute("id", tecno.id);
+    skillCloneL.setAttribute("alt", tecno.alt);
+    skillCloneL.querySelector("img").src = tecno.image;
+    skillCloneL.querySelector("#skill__name").innerHTML = tecno.name;
+    learningSection.appendChild(skillCloneL);
+});
+
 skills.map( tec => {
     const skillClone = skill.cloneNode(true);
     skillClone.setAttribute("id", tec.id);
@@ -91,20 +104,21 @@ skills.map( tec => {
     sectionSkills.appendChild(skillClone);
 });
 
-
-
-
-
-let position = 0;
-
 setInterval(() => {
     curiosity.innerHTML= curiosities[position].content;
     position ++;
     if(position > 2 ){
         position = 0;
     }
-}, 8000);
+}, 10000);
 
+window.addEventListener("scroll", function(){
+    let navbar = document.querySelector(".landing__nav-bar");
 
-
+    if(window.pageYOffset >= 4.5){
+    navbar.setAttribute("id", "on-roll")
+    }else if(window.pageYOffset < 3){
+    navbar.setAttribute("id","");
+    }
+});
 
