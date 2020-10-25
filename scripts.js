@@ -8,6 +8,8 @@ const menuItems = document.querySelectorAll('.landing__nav-bar a');
 
 const curiosity = document.querySelector('.curiosity__reading-trade');
 
+
+
 const skills = [
     {
         id:"1",
@@ -122,3 +124,17 @@ window.addEventListener("scroll", function(){
     }
 });
 
+
+menuItems.forEach(item =>{
+    item.addEventListener("click", function(event){
+        event.preventDefault();
+        const element = event.target;
+        const id = element.getAttribute('href');
+        const section = document.querySelector(id);
+        section.scrollIntoView({
+            behavior:"smooth"
+        })
+       
+
+    })
+})
