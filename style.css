@@ -12,7 +12,7 @@
 
 
 html {
-    /* a cada 1rem será considera 10px */
+    /* base 62.5% logo, a cada 1rem será considera 10px */
     font-size: 55.5%;
     
   }
@@ -550,7 +550,6 @@ footer{
 
 .about-me__card--header span{
     margin: 0;
-    margin-top:-2rem;
     font-size: 1.2rem;
     color: #D7D7D7;
     font-weight: 400;
@@ -596,15 +595,15 @@ footer{
 
 
 .about-me__card--header p {
-    font-size: 1.4rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 600;
     margin: 0 0 1.6rem;
     padding-bottom: 1.6rem;
     text-align: justify;
     color: black;
     width: 25rem;
     word-spacing: 0.1rem;
-    font-size: 1.2rem;
+    font-family: 'poppins', sans-serif;
 }
 
 .about-me__card--header p:hover {

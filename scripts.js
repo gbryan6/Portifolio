@@ -127,7 +127,6 @@ window.addEventListener("scroll", function(){
 
 menuItems.forEach(item =>{
     item.addEventListener("click", function(event){
-        event.preventDefault();
         const element = event.target;
         const id = element.getAttribute('href');
         const section = document.querySelector(id);
