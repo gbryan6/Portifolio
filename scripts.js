@@ -110,3 +110,13 @@ setInterval(() => {
     position = 0;
   }
 }, 10000);
+
+window.addEventListener("scroll", function(){
+  let navbar = document.querySelector(".landing__nav-bar");
+
+  if(window.pageYOffset >= 4.5){
+  navbar.setAttribute("id", "on-roll")
+  }else if(window.pageYOffset < 3){
+  navbar.setAttribute("id","");
+  }
+});
