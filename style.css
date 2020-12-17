@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background: #D7D7D7;
+    background: #d7d7d7;
     font-size: 1.6rem;
     height: auto;
 }
@@ -28,11 +28,11 @@ body {
 
 footer {
     height: 20rem;
-    background: #1D1D1D;
+    background: #1d1d1d;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     color: white;
 }
 
@@ -74,7 +74,7 @@ footer {
 #on-roll {
     position: fixed;
     top: 0;
-    background-color: #D7D7D7;
+    background-color: #d7d7d7;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +102,7 @@ footer {
     display: flex;
     list-style: none;
     width: 63.7rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 1.4rem;
 }
@@ -150,7 +150,7 @@ footer {
 
 .landing__apresentation {
     margin-top: 13rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .landing__apresentation h3 {
@@ -222,7 +222,7 @@ footer {
     height: 25rem;
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(90.18deg, #1D1D1D 31.74%, #1D1D1D 90.49%, #1D1D1D 90.49%);
+    background: linear-gradient( 90.18deg, #1d1d1d 31.74%, #1d1d1d 90.49%, #1d1d1d 90.49%);
     overflow: hidden;
 }
 
@@ -241,18 +241,18 @@ footer {
     font-size: 2rem;
     letter-spacing: 0.5rem;
     margin-bottom: 5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .curiosity__reading--title {
     font-size: 1.6rem;
-    font-family: 'Open-sans', sans-serif;
+    font-family: "Open-sans", sans-serif;
     font-weight: 700;
 }
 
 .curiosity__reading-trade {
     font-size: 1.4rem;
-    font-family: 'Open-sans', sans-serif;
+    font-family: "Open-sans", sans-serif;
     font-weight: 700;
     animation-name: right-left;
     animation-duration: 10s;
@@ -319,12 +319,12 @@ footer {
     border: 0.8rem solid black;
     border-radius: 2rem;
     padding: 2.5rem 4.5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     letter-spacing: 1rem;
 }
 
 .about-me__coment {
-    font-family: 'Open-sans', sans-serif;
+    font-family: "Open-sans", sans-serif;
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -361,7 +361,7 @@ footer {
 }
 
 .about-me__knowledge--center h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: bold;
     letter-spacing: 0.18538em;
@@ -369,7 +369,7 @@ footer {
 }
 
 .about-me__knowledge--center p {
-    font-family: 'Open-sans', sans-serif;
+    font-family: "Open-sans", sans-serif;
     font-weight: 500;
     font-size: 1.6rem;
     text-align: justify;
@@ -399,7 +399,7 @@ footer {
 
 .about-me__description {
     width: 90rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     letter-spacing: 0.5rem;
     margin-bottom: 6rem;
@@ -427,7 +427,7 @@ footer {
 .about-me__skill {
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     justify-content: center;
     align-items: center;
 }
@@ -462,11 +462,11 @@ footer {
 }
 
 .about-me__portfolio {
-    background: #1D1D1D;
+    background: #1d1d1d;
 }
 
 #portfolio h2 {
-    border: 0.8rem solid #FFFFFF;
+    border: 0.8rem solid #ffffff;
     color: white;
 }
 
@@ -476,7 +476,7 @@ footer {
 
 .about-me__portfolio {
     height: auto;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -486,13 +486,13 @@ footer {
 
 .about-me__portfolio span {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-top: 2rem;
 }
 
 .about-me__list-card {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     padding: 4.8rem;
     overflow-x: scroll;
@@ -504,12 +504,12 @@ footer {
     width: 30rem;
     min-width: 25rem;
     padding: 1.5rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     background: #909090;
     box-shadow: -1.6rem 0 4.8rem #201c29c4;
     display: flex;
     flex-direction: column;
-    transition: .2s;
+    transition: 0.2s;
     margin: 0;
     scroll-snap-align: start;
     clear: both;
@@ -527,7 +527,7 @@ footer {
 .about-me__card--header span {
     margin: 0;
     font-size: 1.2rem;
-    color: #D7D7D7;
+    color: #d7d7d7;
     font-weight: 400;
 }
 
@@ -557,15 +557,16 @@ footer {
     min-height: 5rem;
     width: auto;
     height: auto;
-    border-radius: 1rem;
+    border-radius: 0.7rem;
     box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
-    transition: .2s;
+    transition: 0.2s;
 }
 
 .about-me__card--header img:hover {
     position: relative;
     max-width: 35rem;
     max-height: 35rem;
+    border-radius: 0;
     width: auto;
     height: auto;
     z-index: 1000;
@@ -573,14 +574,14 @@ footer {
 
 .about-me__card--header p {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0 0 1.6rem;
     padding-bottom: 1.6rem;
     text-align: justify;
     color: black;
     width: 25rem;
     word-spacing: 0.1rem;
-    font-family: 'poppins', sans-serif;
+    font-family: "poppins", sans-serif;
 }
 
 .about-me__card--header p:hover {
@@ -597,11 +598,33 @@ footer {
 }
 
 .about-me__list-card::-webkit-scrollbar-thumb {
-    background: #1D1D1D;
+    background: #1d1d1d;
     border-radius: 1rem;
-    box-shadow: inset 0.2rem 0.2rem 0.2rem hsla(0, 0%, 100%, .25), inset -0.2rem -0.2rem 0.2rem rgba(0, 0, 0, .25);
+    box-shadow: inset 0.2rem 0.2rem 0.2rem hsla(0, 0%, 100%, 0.25), inset -0.2rem -0.2rem 0.2rem rgba(0, 0, 0, 0.25);
 }
 
 .about-me__list-card::-webkit-scrollbar-track {
-    background: linear-gradient(90deg, #201c29, #201c29 0.1rem, #17141d 0, #17141d);
+    background: linear-gradient( 90deg, #201c29, #201c29 0.1rem, #17141d 0, #17141d);
+    display: none;
+}
+
+.message {
+    color: white;
+    background-color: black;
+    font-family: "Montserrat";
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 20%;
+}
+
+.message p {
+    width: 100%;
+}
+
+.message__button {
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
 }

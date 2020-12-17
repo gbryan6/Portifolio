@@ -1,6 +1,6 @@
 const sectionSkills = document.querySelector(".about-me__skills--section");
 const skill = document.querySelector(".about-me__skill");
-
+const msg = document.querySelector(".message");
 const learningSkill = document.querySelector("#skill__learning");
 const learningSection = document.querySelector("#section__learning");
 
@@ -120,3 +120,7 @@ window.addEventListener("scroll", function(){
   navbar.setAttribute("id","");
   }
 });
+
+function CloseMessage(){
+  msg.style.display = "none";
+}

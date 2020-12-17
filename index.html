@@ -2,60 +2,77 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Portfólio | Gabriel Bryan</title>
 </head>
 
 <body>
     <!-- Utilizing BEM notation refs: http://getbem.com/naming/ -->
     <!-- Author Gabriel Bryan -->
+    <div class="message">
+        <p>Olá obrigado por seu acesso e interesse, aqui ficam minhas informaçoes, curiosidades e mais, tudo em constante atualização.</p>
+        <a class="message__button" onclick="CloseMessage()">fechar</a>
+    </div>
     <div id="landing">
         <div id="landing__content">
             <nav class="landing__nav">
                 <div class="landing__nav-bar">
-                    <a href="#"><img src="./images/Logo.svg" alt="Logo Gabriel Bryan" id="landing__logo"></a>
+                    <a href="#"><img src="./images/Logo.svg" alt="Logo Gabriel Bryan" id="landing__logo" /></a>
                     <ul class="landing__nav-bar--left">
                         <li><a href="#about-me">Sobre mim</a></li>
                         <li><a href="#habilities">Habilidades</a></li>
                         <li><a href="#section__port">Portfólio</a></li>
-                        <li><a href="./downloads/Curriculo_Gabriel_Bryan.pdf" download>Currículo</a></li>
-                        <li id="landing__nav-bar--active"><a target="blank" href="https://api.whatsapp.com/send?phone=5531982786211&text=Ol%C3%A1%20Gabriel.">Fale comigo</a></li>
-
+                        <li>
+                            <a href="./downloads/Curriculo_Gabriel_Bryan.pdf" download>Currículo</a
+                >
+              </li>
+              <li id="landing__nav-bar--active">
+                <a
+                  target="blank"
+                  href="https://api.whatsapp.com/send?phone=5531982786211&text=Ol%C3%A1%20Gabriel."
+                  >Fale comigo</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section class="landing__section">
+          <div class="landing__apresentation">
+            <h3>Oi, eu sou</h3>
+            <h1>Gabriel Bryan</h1>
+            <p>Front-end developer Jr</p>
+          </div>
+          <div class="landing__buttons">
+            <ul class="landing__buttons--left">
+              <li>
+                <a target="blank" href="#"
+                  ><img src="./images/Email.svg" alt="Email"
+                /></a>
+                        </li>
+                        <li>
+                            <a target="blank" href="https://github.com/gbryan6"><img src="./images/Git.svg" alt="Git" /></a>
+                        </li>
+                        <li>
+                            <a target="blank" href="https://www.linkedin.com/in/gabriel-bryan-241078194/"><img src="./images/Linkedin.svg" alt="Linkedin" /></a>
+                        </li>
                     </ul>
                 </div>
-            </nav>
-            <section class="landing__section">
-                <div class="landing__apresentation">
-                    <h3>Oi, eu sou</h3>
-                    <h1>Gabriel Bryan</h1>
-                    <p>Front-end developer Jr</p>
-                </div>
-                <div class="landing__buttons">
-                    <ul class="landing__buttons--left">
-                        <li>
-                            <a target="blank" href="#"><img src="./images/Email.svg" alt="Email"></a>
-                        </li>
-                        <li>
-                            <a target="blank" href="https://github.com/gbryan6"><img src="./images/Git.svg" alt="Git"></a>
-                        </li>
-                        <li>
-                            <a target="blank" href="https://www.linkedin.com/in/gabriel-bryan-241078194/"><img src="./images/Linkedin.svg" alt="Linkedin"></a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                </section>
         </div>
     </div>
     <div class="curiosity">
         <div class="curiosity__reading">
             <h2>CURIOSIDADE</h2>
-            <p class="curiosity__reading--title"> <strong>Você sabia?</strong></p>
-            <p class="curiosity__reading-trade">Que esse site não ultiza nenhum tipo de framework? Foi feito somente com HTML, CSS, JavaScript. Dessa forma eu consigo aprimorar meus estudos.</p>
+            <p class="curiosity__reading--title"><strong>Você sabia?</strong></p>
+            <p class="curiosity__reading-trade">
+                Que esse site não ultiza nenhum tipo de framework? Foi feito somente com HTML, CSS, JavaScript. Dessa forma eu consigo aprimorar meus estudos.
+            </p>
         </div>
         <div class="curiosity__animation">
-            <img src="./images/QuadradoOi.svg" alt="">
+            <img src="./images/QuadradoOi.svg" alt="" />
         </div>
     </div>
     <section id="about-me">
@@ -63,27 +80,33 @@
             <div class="about-me__marcation">
                 <h2>SOBRE MIM</h2>
             </div>
-            <img src="./images/Separator.svg" alt="tag" id="about-me__separator">
+            <img src="./images/Separator.svg" alt="tag" id="about-me__separator" />
             <div class="about-me__meet">
                 <div class="about-me__knowledge">
                     <div class="about-me__knowledge--center left">
-                        <img src="./images/Design.svg" alt="logo">
+                        <img src="./images/Design.svg" alt="logo" />
                         <h2>DESIGN</h2>
-                        <p>Me interessei pela área e atualmente dei inícios aos estudos sobre UI/UX</p>
+                        <p>
+                            Me interessei pela área e atualmente dei inícios aos estudos sobre UI/UX
+                        </p>
                     </div>
                     <div class="about-me__knowledge--center rigt">
-                        <img src="./images/Development.svg" alt="logo">
+                        <img src="./images/Development.svg" alt="logo" />
                         <h2>DESENVOLVIMENTO</h2>
-                        <p>Desde cedo tive curiosidade e impulso pela área de computação e pesquisando me identifiquei com a área de desenvolvimento.</p>
+                        <p>
+                            Desde cedo tive curiosidade e impulso pela área de computação e pesquisando me identifiquei com a área de desenvolvimento.
+                        </p>
                     </div>
                     <div class="about-me__knowledge--center down">
-                        <img src="./images/Maintenance.svg" alt="logo">
+                        <img src="./images/Maintenance.svg" alt="logo" />
                         <h2>MANUTENÇÃO</h2>
-                        <p>Gosto bastante de hardware, foi o primeiro passo para a área de computação. Hoje pra mim é um grande hobby. Todo meu conhecimento em manutenção fui adquirindo sozinho, consertando e pesquisando</p>
+                        <p>
+                            Gosto bastante de hardware, foi o primeiro passo para a área de computação. Hoje pra mim é um grande hobby. Todo meu conhecimento em manutenção fui adquirindo sozinho, consertando e pesquisando
+                        </p>
                     </div>
                 </div>
             </div>
-            <img src="./images/Separator.svg" alt="tag" id="habilities">
+            <img src="./images/Separator.svg" alt="tag" id="habilities" />
             <div class="about-me__marcation marcation-two">
                 <h2>SKILLS</h2>
             </div>
@@ -91,39 +114,41 @@
                 <h2 class="about-me__description">USANDO HOJE:</h2>
                 <div class="about-me__skills--section">
                     <div class="about-me__skill">
-                        <img src="./iconSkills/Java.svg" alt="HTML" class="about-me__skill--icon">
+                        <img src="./iconSkills/Java.svg" alt="HTML" class="about-me__skill--icon" />
                         <span class="about-me__skill--name">JAVA</span>
                     </div>
                 </div>
                 <h2 class="about-me__description">APRENDENDO:</h2>
                 <div class="about-me__skills--section" id="section__learning">
                     <div class="about-me__skill" id="skill__learning">
-                        <img src="./iconSkills/Node.svg" alt="HTML" class="about-me__skill--icon">
-                        <span class="about-me__skill--name" id="skill__name">NODE JS</span>
-                    </div>
-                </div>
+                        <img src="./iconSkills/Node.svg" alt="HTML" class="about-me__skill--icon" />
+                        <span class="about-me__skill--name" id="skill__name">NODE JS</span
+              >
             </div>
-            <div class="about-me__portfolio" id="section__port">
-                <div class="about-me__marcation" id="portfolio">
-                    <h2>PORTFÓLIO</h2>
-                </div>
-                <section class="about-me__list-card">
-                    <article class="about-me__card">
-                        <header class="about-me__card--header">
-                            <img src="./portfolioImages/Page1.PNG" alt="teste">
-                            <span>finalizado: <strong>17/10/2020</strong></span>
-                            <p>Meu primeiro projeto com JavaScript, CSS e HTML, feito para exibir meu portfólio e aprimorar meus conhecimentos.</p>
-                        </header>
-                    </article>
-
-                </section>
-                <span>Ainda mais há por vir</span>
-            </div>
+          </div>
         </div>
+        <div class="about-me__portfolio" id="section__port">
+          <div class="about-me__marcation" id="portfolio">
+            <h2>PORTFÓLIO</h2>
+          </div>
+          <section class="about-me__list-card">
+            <article class="about-me__card">
+              <header class="about-me__card--header">
+                <img src="./portfolioImages/Page1.PNG" alt="teste" />
+                <span>finalizado: <strong>17/10/2020</strong></span>
+                        <p>
+                            Meu primeiro projeto com JavaScript, CSS e HTML, feito para exibir meu portfólio e aprimorar meus conhecimentos.
+                        </p>
+                        </header>
+                        </article>
+    </section>
+    <span>Ainda há mais por vir</span>
+    </div>
+    </div>
     </section>
     <footer>
         <div class="footer__content">
-            <a href="#landing"><img src="./images/Back-top.svg" alt="Voltar ao topo"></a>
+            <a href="#landing"><img src="./images/Back-top.svg" alt="Voltar ao topo" /></a>
             <p>@2020 Gabriel Bryan. Todos os direitos Reservados.</p>
         </div>
     </footer>
