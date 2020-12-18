@@ -24,6 +24,7 @@ html,
 body {
     text-rendering: optimizelegibility;
     -webkit-font-smoothing: antialiased;
+    width: 100vw;
 }
 
 footer {
@@ -34,6 +35,7 @@ footer {
     align-items: center;
     font-family: "Nunito", sans-serif;
     color: white;
+    width: 100vw;
 }
 
 .footer__content {
@@ -101,7 +103,7 @@ footer {
 .landing__nav-bar--left {
     display: flex;
     list-style: none;
-    width: 63.7rem;
+    width: auto;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 1.4rem;
@@ -186,7 +188,6 @@ footer {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    padding-right: 20rem;
 }
 
 .landing__buttons a {
@@ -219,6 +220,7 @@ footer {
 }
 
 .curiosity {
+    width: 100vw;
     height: 25rem;
     display: flex;
     justify-content: space-between;
@@ -303,6 +305,7 @@ footer {
 }
 
 .about-me__content {
+    width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -398,7 +401,7 @@ footer {
 }
 
 .about-me__description {
-    width: 90rem;
+    width: 85%;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     letter-spacing: 0.5rem;
@@ -407,18 +410,20 @@ footer {
 }
 
 .about-me__skills {
-    height: 100rem;
+    width: 100vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .about-me__skills--section {
-    width: 90rem;
-    height: 40rem;
+    width: 90%;
+    max-width: 691px;
+    height: auto;
     align-self: center;
     display: grid;
-    grid: repeat(2, 12rem) / auto-flow;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     align-content: center;
     column-gap: 5rem;
     row-gap: 8rem;
@@ -461,10 +466,6 @@ footer {
     margin-bottom: 8rem;
 }
 
-.about-me__portfolio {
-    background: #1d1d1d;
-}
-
 #portfolio h2 {
     border: 0.8rem solid #ffffff;
     color: white;
@@ -482,6 +483,8 @@ footer {
     place-items: center;
     font-weight: 600;
     padding-bottom: 2rem;
+    background: #1d1d1d;
+    width: 100vw;
 }
 
 .about-me__portfolio span {
@@ -496,12 +499,12 @@ footer {
     font-weight: 700;
     padding: 4.8rem;
     overflow-x: scroll;
-    width: 50%;
+    width: 95%;
 }
 
 .about-me__card {
-    height: 35rem;
-    width: 30rem;
+    height: 280px;
+    width: 242px;
     min-width: 25rem;
     padding: 1.5rem;
     border-radius: 0.5rem;
@@ -612,11 +615,11 @@ footer {
     color: white;
     background-color: black;
     font-family: "Montserrat";
-    height: 25px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 15px 0 20%;
+    padding: 3px 15px 3px 20%;
 }
 
 .message p {
@@ -626,5 +629,5 @@ footer {
 .message__button {
     text-decoration: none;
     font-size: 1.2rem;
-    cursor: pointer;
+    cursor: pointer
 }
