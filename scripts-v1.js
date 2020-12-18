@@ -124,3 +124,20 @@ window.addEventListener("scroll", function(){
 function CloseMessage(){
   msg.style.display = "none";
 }
+
+let show = true;
+
+const menuSection = document.querySelector(".landing__menu-section");
+const menuToggle = document.querySelector(".landing__menu-toggle");
+const items = document.querySelector(".landing__nav-bar--left");
+
+menuToggle.addEventListener("click", () => {
+    document.body.style.overflow = show ? "hidden" : "initial"
+
+    menuSection.classList.toggle("on", show);
+    show = !show
+})
+
+items.addEventListener("click", () =>{
+    menuToggle.click();
+})
