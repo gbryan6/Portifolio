@@ -1,0 +1,50 @@
+@media (max-width: 1024px) {
+    html {
+        /* base 62.5% logo, a cada 1rem será considera 10px */
+        font-size: 50.5%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        /* base 62.5% logo, a cada 1rem será considera 10px */
+        font-size: 45.5%;
+    }
+}
+
+@media (max-width: 425px) {
+    .landing__nav-bar--left {
+        display: none;
+    }
+    .one,
+    .two,
+    .tree {
+        background-color: black;
+        height: 4px;
+        width: 100%;
+        margin: 2px auto;
+    }
+    .landing__menu-toggle {
+        width: 27px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .curiosity__animation img {
+        width: 250px;
+        height: 250px;
+        animation-name: around;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        z-index: 0;
+    }
+    .curiosity__animation {
+        left: -50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-me__knowledge {
+        padding-left: 20px;
+    }
+}

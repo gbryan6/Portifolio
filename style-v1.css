@@ -188,6 +188,7 @@ footer {
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    margin-right: 20px;
 }
 
 .landing__buttons a {
@@ -623,7 +624,7 @@ footer {
 }
 
 .message p {
-    width: 100%;
+    width: 80%;
 }
 
 .message__button {
